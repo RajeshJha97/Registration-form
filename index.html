@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <main
+      class="bg-gradient-to-r from-cyan-500 to-green-300 w-screen h-screen flex flex-col justify-center items-center font-mono"
+    >
+      <form
+        class="bg-zinc-50 flex flex-col rounded-xl shadow-2xl shadow-blue-400"
+        id="form"
+      >
+        <h1
+          class="text-3xl font-bold text-blue-600 text-center mb-10 mx-8 mt-2 md:mx-8"
+        >
+          Registration Form
+        </h1>
+        <input
+          type="text"
+          placeholder="Name"
+          class="my-1 bg-zinc-50 focus:outline-none border-b-2 border-green-300 ml-8 w-[70%] mb-8 md:ml-4"
+          id="name"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email Address"
+          class="bg-zinc-50 focus:outline-none border-b-2 border-green-300 ml-8 w-[70%] mb-8 md:ml-4"
+          id="email"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Country"
+          class="bg-zinc-50 focus:outline-none border-b-2 border-green-300 ml-8 w-[70%] mb-8 md:ml-4"
+          id="country"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Phone"
+          class="bg-zinc-50 focus:outline-none border-b-2 border-green-300 ml-8 w-[70%] mb-8 md:ml-4"
+          id="phone"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="bg-zinc-50 focus:outline-none border-b-2 border-green-300 ml-8 w-[70%] mb-8 md:ml-4"
+          id="password"
+          required
+        />
+        <section class="flex ml-8 mb-8 space-x-2 md:ml-4">
+          <input type="checkbox" id="terms" required />
+          <label for="terms" class="text-sm"
+            >I accept the terms and condition</label
+          >
+        </section>
+        <button
+          class="mb-8 bg-gradient-to-r from-cyan-500 to-green-300 py-4 px-2 w-1/3 ml-24 rounded-2xl transition duration-1000 ease-in-out hover:bg-gradient-to-r hover:from-cyan-500/80 hover:to-red-300"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
